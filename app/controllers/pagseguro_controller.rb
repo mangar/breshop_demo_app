@@ -1,6 +1,6 @@
 class PagseguroController < ApplicationController
   
-  require File.dirname(__FILE__) + '/breshop/pagseguro'
+  require 'breshop'
   
   attr_reader :item_1, :item_2
   
@@ -32,7 +32,7 @@ class PagseguroController < ApplicationController
   def remover
     
   end
-
+  
   # Atualiza a quantidade de itens no carrinho de compras
   def atualizar
     
@@ -42,7 +42,7 @@ class PagseguroController < ApplicationController
   def valor_frete
     
     par = params[:value].split("+")
-
+  
     pedido = session[:pedido]
     pedido.cep1 = par[0]
     pedido.cep2 = par[1]
@@ -68,19 +68,19 @@ class PagseguroController < ApplicationController
   def finalizar
     
   end
-
+  
   # reinicia o carrinho de compras
   def reiniciar
     session[:pedido] = nil
     redirect_to :action => 'index'
   end
-
+  
   # Cria o carrinho de compras o carrinho de compras inicial
   def inicia_carrinho
     pedido = Pedido.new
     pedido << @item_1
     pedido << @item_2
-
+  
     pedido
   end
   
