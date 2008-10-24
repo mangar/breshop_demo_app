@@ -3,7 +3,6 @@
 <script type="text/javascript" src="/javascripts/validation.js"></script>
 <script type="text/javascript" src="/javascripts/checkout.js"></script>
 <%= javascript_include_tag  :defaults %>
-
 <center>
 	<h2>Checkout PAGSEGURO</h2>
 </center>
@@ -19,14 +18,14 @@
 		<td align="center">Peso <br> Total</td>
 		<td align="center">Valor Total</td>
 	</tr>
-	<% @pedido.itens.values.each do |item|%>	
+	<% @sale.itens.values.each do |item|%>	
 	<tr>
-		<td align="center"><%= item.descricao%></td>
-		<td align="center"><%= text_field_tag "quantity_#{item.codigo}", "#{item.quantidade.to_i}", :size => "3", :maxlength => "3", :onkeypress => "mascara(this, soNumeros)" %></td>
-		<td align="center"><%= number_to_currency(item.valor, :separator => ",", :delimiter => ".", :unit => "R$ ")%></td>
-		<td align="center"><%= format_weight(item.peso)%></td>
-		<td align="center"><%= format_weight(item.peso_total)%></td>
-		<td align="center"><%= number_to_currency(item.valor_total, :separator => ",", :delimiter => ".", :unit => "R$ ")%></td>
+		<td align="center"><%= item.description%></td>
+		<td align="center"><%= text_field_tag "quantity_#{item.code}", "#{item.quantity.to_i}", :size => "3", :maxlength => "3", :onkeypress => "mascara(this, soNumeros)" %></td>
+		<td align="center"><%= number_to_currency(item.price, :separator => ",", :delimiter => ".", :unit => "R$ ")%></td>
+		<td align="center"><%= format_weight(item.weight)%></td>
+		<td align="center"><%= format_weight(item.weight_total)%></td>
+		<td align="center"><%= number_to_currency(item.price_total, :separator => ",", :delimiter => ".", :unit => "R$ ")%></td>
 	</tr>
 	<% end %>
 	
@@ -39,14 +38,15 @@
 			<%= text_field_tag :zip1, "", :size => "5", :maxlength => "5", :onkeypress => "mascara(this, soNumeros)" %>
 			<%= text_field_tag :zip2, "", :size => "3", :maxlength => "3", :onkeypress => "mascara(this, soNumeros)" %>			
 		  	<%= link_to_remote ("Calcular",
-		    	:url => { :action => :valor_frete }, 
+		    	:url => { :action => :price_frete }, 
 				:with => "'value='+$('zip1').value+'+'+$('zip2').value+'+'+$('shipment_way_sd').checked+'+'+$('shipment_way_en').checked", 
 				:complete => "atualiza_frete()",
 				:update => "jstemp" ) %>
 				</td>
-		<td align="center">			
+		<td align="center">
 			<div id="valor_frete">&nbsp;
-			<%= number_to_currency(@pedido.frete, :separator => ",", :delimiter => ".", :unit => "R$ ")%></div>
+			<%= number_to_currency(@sale.shipment, :separator => ",", :delimiter => ".", :unit => "R$ ")%>
+			</div>
 		</td>
 	</tr>
 	<tr>
@@ -55,11 +55,13 @@
 		</td>
 		<td align="center">
 			Peso Total <br />
-			<%= format_weight(@pedido.peso)%>
+			<%= format_weight(@sale.weight)%>
 		</td>
 		<td align="center">
 			Preço Total <br />
-			<div id="valor_pedido"><%= number_to_currency(@pedido.valor, :separator => ",", :delimiter => ".", :unit => "R$ ")%></div>
+			<div id="valor_pedido">
+			<%= number_to_currency(@sale.price, :separator => ",", :delimiter => ".", :unit => "R$ ")%>
+			</div>
 		</td>		
 	</tr>
 	<tr>
@@ -73,17 +75,17 @@
 
 <ul>
 	<li><s>Formatar os numeros do checkout</s>
-	<li><s>Inclusao de peso total e valor total do pedido</s>		
+	<li><s>Inclusao de weight total e price total do pedido</s>		
 	<li><s>Calculo do frete (chamar a API)</s>
-	<li>Teste com descricao do nome do produto com espacos
+	<li>Teste com description do nome do produto com espacos
 	<li>Incluir botoes e direciona-los aos metodos do controller		
 	<li>Formulario de cadastro do cliente
 	<li>criar testes fucnionais para as acoes dos botoes
 	<li><s>Testes para o calculo de frete</s>
 	<li><s>Criar documento de como instalar o plugin</s>
 	<li>Criar documento de como utilizar o eshop_demo_app
-	<li><s>Colocar o codigo do plugin no github</s>
-	<li><s>Colocar o codigo do eshop_demo_app no github</s>
+	<li><s>Colocar o code do plugin no github</s>
+	<li><s>Colocar o code do eshop_demo_app no github</s>
 </ul>
 
 
