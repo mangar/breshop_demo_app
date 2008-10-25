@@ -7,8 +7,7 @@
 	<h2>Checkout PAGSEGURO</h2>
 </center>
 
-
-
+<center>
 <table width="80%" border="1">
 	<tr>
 		<td align="center">Descricao do Item</td>
@@ -60,32 +59,114 @@
 		<td align="center">
 			Preço Total <br />
 			<div id="valor_pedido">
-			<%= number_to_currency(@sale.price, :separator => ",", :delimiter => ".", :unit => "R$ ")%>
+				<%= number_to_currency(@sale.price, :separator => ",", :delimiter => ".", :unit => "R$ ")%>
 			</div>
 		</td>		
 	</tr>
 	<tr>
 		<td colspan="6" align="right">
-			| <%= link_to "Atualizar Itens", :action => 'atualizar'%>
 			| <%= link_to "Iniciar carrinho de compras", :action => 'reiniciar'%>
-			| <%= link_to "Fechar pedido", :action => 'atualizar'%>
 		</td>
 	</tr>	
 </table>
 
-<ul>
-	<li><s>Formatar os numeros do checkout</s>
-	<li><s>Inclusao de weight total e price total do pedido</s>		
-	<li><s>Calculo do frete (chamar a API)</s>
-	<li>Teste com description do nome do produto com espacos
-	<li>Incluir botoes e direciona-los aos metodos do controller		
-	<li>Formulario de cadastro do cliente
-	<li>criar testes fucnionais para as acoes dos botoes
-	<li><s>Testes para o calculo de frete</s>
-	<li><s>Criar documento de como instalar o plugin</s>
-	<li>Criar documento de como utilizar o eshop_demo_app
-	<li><s>Colocar o code do plugin no github</s>
-	<li><s>Colocar o code do eshop_demo_app no github</s>
-</ul>
+</center>
 
+<% field_set_tag 'Dados cadastrais' do %>
+<center>
+<table width="80%" border="1">
+  <tr>
+	<td>Emai</td>
+    <td><%= text_field_tag "email", "marcio_mangar@hotmail.com", :size => "30", :maxlength => "100" %></td>
+  </tr>
+  <tr>
+	<td>Nome</td>
+    <td><%= text_field_tag "name", "Marcio", :size => "20", :maxlength => "30" %></td>
+  </tr>
+  <tr>
+	<td>Sobrenome</td>
+    <td><%= text_field_tag "last_name", "Garcia", :size => "30", :maxlength => "30" %></td>
+  </tr>
+  <tr>
+    <td>Sexo:</td>
+    <td>
+		<%= radio_button_tag "gender", "m", true %>Masculino
+		<%= radio_button_tag "gender", "w", false %>Feminino
+    </td>
+  </tr>
+  <tr>
+	<td>Data de nascimento</td>
+    <td><%= text_field_tag "date_born", "11/02/1980", :size => "10", :maxlength => "10", :onkeypress => "mascara(this,dataV2)" %></td>
+  </tr>
+  <tr>
+	<td>CPF</td>
+    <td><%= text_field_tag "cpf", "123.123.123-12", :size => "15", :maxlength => "14", :onkeypress => "mascara(this,cpfV2)" %></td>
+  </tr>
+  <tr>
+	<td>RG</td>
+    <td><%= text_field_tag "rg", "12.123.123-1", :size => "20", :maxlength => "20" %></td>
+  </tr>
+  <tr>
+	<td>Phone</td>
+    <td>
+		<%= text_field_tag "phone1", "(11)8671-8671", :size => "13", :maxlength => "13", :onkeypress => "mascara(this, telefone)" %> <br />
+		<%= text_field_tag "phone2", "", :size => "13", :maxlength => "13", :onkeypress => "mascara(this, telefone)" %>
+	</td>
+  </tr>
+</table>
+</center>
+<% end %>
+
+<% field_set_tag 'Endereço de Entrega' do %>
+<center>
+<table width="80%" border="1">
+  <tr>
+    <td>Endereco</td>
+    <td><%= text_field_tag "address", "Av. Jacutinga", :size => "30", :maxlength => "50" %></td>
+  </tr>
+  <tr>
+	<td>Numero</td>
+    <td><%= text_field_tag "address_number", "632", :size => "5", :maxlength => "10" %></td>
+  </tr>
+  <tr>
+    <td>Complemento</td>
+    <td><%= text_field_tag "address_complement", "", :size => "30", :maxlength => "50" %></td>
+  </tr>
+  <tr>
+	<td>Bairro</td>
+    <td><%= text_field_tag "district", "Moema", :size => "30", :maxlength => "50" %></td>
+  </tr>
+  <tr>
+	<td>CEP</td>
+    <td>
+	<%= text_field_tag "zip1", "04515", :size => "5", :maxlength => "5", :onkeypress => "mascara(this, soNumeros)" %>
+	<%= text_field_tag "zip2", "030", :size => "3", :maxlength => "3", :onkeypress => "mascara(this, soNumeros)" %>
+	</td>
+  </tr>
+  <tr>
+	<td>Cidade</td>
+    <td><%= text_field_tag "city", "Sao Paulo", :size => "30", :maxlength => "30", :onkeypress => "mascara(this, soLetras)" %></td>
+  </tr>
+  <tr>
+	<td>Estado</td>
+    <td><%= text_field_tag "federal_unit", "SP", :size => "5", :maxlength => "2", :onkeypress => "mascara(this, soLetrasMA)" %></td>
+  </tr>
+</table>
+</center>
+<% end %>
+<p>
+
+<center>
+<table width="90%" border="0">
+  <tr>
+    <td>&nbsp;</td>
+    <td><div align="right">
+		<% if (!session[:redirect_pagseguro_url].nil? && !session[:redirect_pagseguro_url].blank?) %>
+		<%= session[:redirect_pagseguro_url] %>
+		<% end%>
+		<%= submit_tag 'Continuar --&gt;' %>
+    </div></td>
+  </tr>
+</table>
+</center>
 

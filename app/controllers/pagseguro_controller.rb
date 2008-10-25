@@ -18,27 +18,23 @@ class PagseguroController < ApplicationController
                         :weight=>0.200})                
   end
 
+  #
   # Tela inicial do carrinho demo
+  #
   def index    
     #insere itens no carrinho de compras caso nao exista um carrinho criado....
-    session[:sale] = nil
+    # session[:sale] = nil
     
-    @sale = self.inicia_carrinho #(session[:sale] == nil ? self.inicia_carrinho : session[:sale])      
+    
+    @sale = (session[:sale].nil? ? self.inicia_carrinho : session[:sale])
+    #(session[:sale] == nil ? self.inicia_carrinho : session[:sale])      
     session[:sale] = @sale
     
   end
-  
-  # Remove itens do carrinho de compras
-  def remover
-    
-  end
-  
-  # Atualiza a quantity de itens no carrinho de compras
-  def atualizar
-    
-  end
-  
-  #Atualiza o price do frete
+   
+  #   
+  # Atualiza o price do frete
+  #
   def price_frete
     
     par = params[:value].split("+")
@@ -54,33 +50,35 @@ class PagseguroController < ApplicationController
     sale.shipment = preco
     session[:sale] = sale
     
-    render :text =>  "{\"pedido\": { \"frete\": \"#{preco}\", \"valor_total\": \"2.22\"}}"
+    render :text =>  "{\"pedido\": { \"frete\": \"#{preco}\", \"valor_total\": \"#{sale.price}\"}}"
     return
   end
   
-  
-  # Tela inicial do cadastro do cliente
-  def cliente
     
-  end
-  
   # Finaliza o sale, após o cadastro do cliente
   def finalizar
     
+    
   end
   
-  # reinicia o carrinho de compras
+  
+  
+  
+  #
+  # Reinicia o carrinho de compras
+  #
   def reiniciar
     session[:sale] = nil
     redirect_to :action => 'index'
   end
   
+  #
   # Cria o carrinho de compras o carrinho de compras inicial
+  #
   def inicia_carrinho
     sale = Sale.new
     sale << @item_1
     sale << @item_2
-  
     sale
   end
   
