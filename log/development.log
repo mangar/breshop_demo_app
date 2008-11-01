@@ -19461,3 +19461,1157 @@ ewA=--53518c4f84b5ac8362c0217d6e5044a976324b22
   Parameters: {"action"=>"index", "controller"=>"pagseguro"}
 Rendering pagseguro/index
 Completed in 0.01023 (97 reqs/sec) | Rendering: 0.00852 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro]
+
+
+Processing PagseguroController#index (for 127.0.0.1 at 2008-11-01 12:42:27) [GET]
+  Session ID: bdda64b6f0a2a187a45d21a6ece31f27
+  Parameters: {"action"=>"index", "controller"=>"pagseguro"}
+Rendering pagseguro/index
+Completed in 0.03482 (28 reqs/sec) | Rendering: 0.03188 (91%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro]
+
+
+Processing PagseguroController#price_frete (for 127.0.0.1 at 2008-11-01 12:42:37) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlCToKQGNvZGUwOg5Ac2hpcG1lbnQwOgtAYnV5ZXIw
+OgtAaXRlbnN7ByIGMW86CUl0ZW0KOwgiBjE6EUBkZXNjcmlwdGlvbiIOcHJv
+ZHV0bzAxOgxAd2VpZ2h0ZhswLjEwMDAwMDAwMDAwMDAwMDAxAJmaOgtAcHJp
+Y2VmCTExLjU6DkBxdWFudGl0eWkGIgYybzsMCjsIIgYyOw0iD3Byb2R1Y3Rv
+MDI7DmYbMC4yMDAwMDAwMDAwMDAwMDAwMQCZmjsPZhoyMi4zMDAwMDAwMDAw
+MDAwMDEAzM07EGkHIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--c83d0dd601360f45f574ebf700fcdc7c58e65609
+  Parameters: {"authenticity_token"=>"b1c27355904a9948c5614f77d004a3b14bb470ad", "action"=>"price_frete", "value"=>"14055+490+true+false", "controller"=>"pagseguro"}
+
+
+Timeout::Error (execution expired):
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:54:in `rbuf_fill'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:56:in `timeout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/timeout.rb:76:in `timeout'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:132:in `rbuf_fill'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/protocol.rb:86:in `read'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:2221:in `read_body_0'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:2182:in `read_body'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:782:in `get'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:1062:in `request'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:2145:in `reading_body'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:1061:in `request'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:1046:in `request'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:547:in `start'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:1044:in `request'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/net/http.rb:781:in `get'
+    /vendor/plugins/breshop/pagseguro/rails/../lib/pagseguro/integration.rb:52:in `shipment_price'
+    /app/controllers/pagseguro_controller.rb:48:in `price_frete'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PagseguroController#price_frete (for 127.0.0.1 at 2008-11-01 12:43:48) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlCToKQGNvZGUwOg5Ac2hpcG1lbnQwOgtAYnV5ZXIw
+OgtAaXRlbnN7ByIGMW86CUl0ZW0KOwgiBjE6EUBkZXNjcmlwdGlvbiIOcHJv
+ZHV0bzAxOgxAd2VpZ2h0ZhswLjEwMDAwMDAwMDAwMDAwMDAxAJmaOgtAcHJp
+Y2VmCTExLjU6DkBxdWFudGl0eWkGIgYybzsMCjsIIgYyOw0iD3Byb2R1Y3Rv
+MDI7DmYbMC4yMDAwMDAwMDAwMDAwMDAwMQCZmjsPZhoyMi4zMDAwMDAwMDAw
+MDAwMDEAzM07EGkHIgpmbGFzaElDOidBY3Rpb25Db250cm9sbGVyOjpGbGFz
+aDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--c83d0dd601360f45f574ebf700fcdc7c58e65609
+  Parameters: {"authenticity_token"=>"b1c27355904a9948c5614f77d004a3b14bb470ad", "action"=>"price_frete", "value"=>"14055+490+true+false", "controller"=>"pagseguro"}
+
+
+NoMethodError (You have a nil object when you didn't expect it!
+The error occurred while evaluating nil.inner_html):
+    /vendor/plugins/breshop/pagseguro/rails/../lib/pagseguro/integration.rb:57:in `shipment_price'
+    /app/controllers/pagseguro_controller.rb:48:in `price_frete'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2008-11-01 16:17:58) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudDA6CkB6aXAyIgg0OTA6C0BidXllcjA6CkB6aXAxIgoxNDA1
+NToLQGl0ZW5zewciBjFvOglJdGVtCjsIIgYxOhFAZGVzY3JpcHRpb24iDnBy
+b2R1dG8wMToMQHdlaWdodGYbMC4xMDAwMDAwMDAwMDAwMDAwMQCZmjoLQHBy
+aWNlZgkxMS41Og5AcXVhbnRpdHlpBiIGMm87Dwo7CCIGMjsQIg9wcm9kdWN0
+bzAyOxFmGzAuMjAwMDAwMDAwMDAwMDAwMDEAmZo7EmYaMjIuMzAwMDAwMDAw
+MDAwMDAxAMzNOxNpByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh
+c2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--e7b1ff0a09dee95932dce9f50dc13f4efb294fc2
+  Parameters: {"action"=>"index", "controller"=>"pagseguro"}
+
+
+SyntaxError (/Users/mangar/projects/ror_breshop/breshop_demo_app/app/controllers/pagseguro_controller.rb:48: syntax error, unexpected tIDENTIFIER, expecting kEND
+    preco = correios.freight sale.zip1+"-"sale.zip2, "0.300", "1599.99"
+                                              ^
+/Users/mangar/projects/ror_breshop/breshop_demo_app/app/controllers/pagseguro_controller.rb:48: syntax error, unexpected ',', expecting tCOLON2 or '[' or '.'
+    preco = correios.freight sale.zip1+"-"sale.zip2, "0.300", "1599.99"
+                                                             ^):
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_without_new_constant_marking'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:215:in `load_file'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:214:in `load_file'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:95:in `require_or_load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:260:in `load_missing_constant'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:467:in `const_missing'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:479:in `const_missing'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/inflector.rb:283:in `constantize'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/string/inflections.rb:143:in `constantize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/routing/route_set.rb:386:in `recognize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:148:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PagseguroController#index (for 127.0.0.1 at 2008-11-01 16:18:23) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudDA6CkB6aXAyIgg0OTA6C0BidXllcjA6CkB6aXAxIgoxNDA1
+NToLQGl0ZW5zewciBjFvOglJdGVtCjsIIgYxOhFAZGVzY3JpcHRpb24iDnBy
+b2R1dG8wMToMQHdlaWdodGYbMC4xMDAwMDAwMDAwMDAwMDAwMQCZmjoLQHBy
+aWNlZgkxMS41Og5AcXVhbnRpdHlpBiIGMm87Dwo7CCIGMjsQIg9wcm9kdWN0
+bzAyOxFmGzAuMjAwMDAwMDAwMDAwMDAwMDEAmZo7EmYaMjIuMzAwMDAwMDAw
+MDAwMDAxAMzNOxNpByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh
+c2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--e7b1ff0a09dee95932dce9f50dc13f4efb294fc2
+  Parameters: {"action"=>"index", "controller"=>"pagseguro"}
+Rendering pagseguro/index
+Completed in 0.07668 (13 reqs/sec) | Rendering: 0.07415 (96%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro]
+
+
+Processing PagseguroController#price_frete (for 127.0.0.1 at 2008-11-01 16:18:34) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudDA6CkB6aXAyIgg0OTA6C0BidXllcjA6CkB6aXAxIgoxNDA1
+NToLQGl0ZW5zewciBjFvOglJdGVtCjsIIgYxOhFAZGVzY3JpcHRpb24iDnBy
+b2R1dG8wMToMQHdlaWdodGYbMC4xMDAwMDAwMDAwMDAwMDAwMQCZmjoLQHBy
+aWNlZgkxMS41Og5AcXVhbnRpdHlpBiIGMm87Dwo7CCIGMjsQIg9wcm9kdWN0
+bzAyOxFmGzAuMjAwMDAwMDAwMDAwMDAwMDEAmZo7EmYaMjIuMzAwMDAwMDAw
+MDAwMDAxAMzNOxNpByIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxh
+c2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--e7b1ff0a09dee95932dce9f50dc13f4efb294fc2
+  Parameters: {"authenticity_token"=>"b1c27355904a9948c5614f77d004a3b14bb470ad", "action"=>"price_frete", "value"=>"14055+490+true+false", "controller"=>"pagseguro"}
+
+
+TypeError (String can't be coerced into Float):
+    /vendor/plugins/breshop/general/rails/../lib/general/sale.rb:47:in `+'
+    /vendor/plugins/breshop/general/rails/../lib/general/sale.rb:47:in `price'
+    /app/controllers/pagseguro_controller.rb:58:in `price_frete'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PagseguroController#index (for 127.0.0.1 at 2008-11-01 16:19:30) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudCIMMjIuNjk5OToKQHppcDIiCDQ5MDoLQGJ1eWVyMDoKQHpp
+cDEiCjE0MDU1OgtAaXRlbnN7ByIGMW86CUl0ZW0KOwgiBjE6EUBkZXNjcmlw
+dGlvbiIOcHJvZHV0bzAxOgxAd2VpZ2h0ZhswLjEwMDAwMDAwMDAwMDAwMDAx
+AJmaOgtAcHJpY2VmCTExLjU6DkBxdWFudGl0eWkGIgYybzsPCjsIIgYyOxAi
+D3Byb2R1Y3RvMDI7EWYbMC4yMDAwMDAwMDAwMDAwMDAwMQCZmjsSZhoyMi4z
+MDAwMDAwMDAwMDAwMDEAzM07E2kHIgpmbGFzaElDOidBY3Rpb25Db250cm9s
+bGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--fe77e033df693f3e46a04a0e046d7b8e15fd23ef
+  Parameters: {"action"=>"index", "controller"=>"pagseguro"}
+Rendering pagseguro/index
+
+
+ActionView::TemplateError (String can't be coerced into Float) on line #62 of pagseguro/index.html.erb:
+59: 		<td align="center">
+60: 			Preço Total <br />
+61: 			<div id="valor_pedido">
+62: 				<%= number_to_currency(@sale.price, :separator => ",", :delimiter => ".", :unit => "R$ ")%>
+63: 			</div>
+64: 		</td>		
+65: 	</tr>
+
+    vendor/plugins/breshop/general/lib/general/sale.rb:47:in `+'
+    vendor/plugins/breshop/general/lib/general/sale.rb:47:in `price'
+    app/views/pagseguro/index.html.erb:62:in `_run_erb_47app47views47pagseguro47index46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:841:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:259:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1163:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PagseguroController#index (for 127.0.0.1 at 2008-11-01 16:21:19) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudCIMMjIuNjk5OToKQHppcDIiCDQ5MDoLQGJ1eWVyMDoKQHpp
+cDEiCjE0MDU1OgtAaXRlbnN7ByIGMW86CUl0ZW0KOwgiBjE6EUBkZXNjcmlw
+dGlvbiIOcHJvZHV0bzAxOgxAd2VpZ2h0ZhswLjEwMDAwMDAwMDAwMDAwMDAx
+AJmaOgtAcHJpY2VmCTExLjU6DkBxdWFudGl0eWkGIgYybzsPCjsIIgYyOxAi
+D3Byb2R1Y3RvMDI7EWYbMC4yMDAwMDAwMDAwMDAwMDAwMQCZmjsSZhoyMi4z
+MDAwMDAwMDAwMDAwMDEAzM07E2kHIgpmbGFzaElDOidBY3Rpb25Db250cm9s
+bGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--fe77e033df693f3e46a04a0e046d7b8e15fd23ef
+  Parameters: {"action"=>"index", "controller"=>"pagseguro"}
+Rendering pagseguro/index
+
+
+ActionView::TemplateError (String can't be coerced into Float) on line #62 of pagseguro/index.html.erb:
+59: 		<td align="center">
+60: 			Preço Total <br />
+61: 			<div id="valor_pedido">
+62: 				<%= number_to_currency(@sale.price, :separator => ",", :delimiter => ".", :unit => "R$ ")%>
+63: 			</div>
+64: 		</td>		
+65: 	</tr>
+
+    vendor/plugins/breshop/general/lib/general/sale.rb:47:in `+'
+    vendor/plugins/breshop/general/lib/general/sale.rb:47:in `price'
+    app/views/pagseguro/index.html.erb:62:in `_run_erb_47app47views47pagseguro47index46html46erb'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:338:in `execute'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:35:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/template.rb:22:in `render_template'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_view/base.rb:245:in `render_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1108:in `render_for_file'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:841:in `render_with_no_layout'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/layout.rb:259:in `render_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:51:in `render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1157:in `default_render'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1163:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PagseguroController#index (for 127.0.0.1 at 2008-11-01 16:21:40) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudCIMMjIuNjk5OToKQHppcDIiCDQ5MDoLQGJ1eWVyMDoKQHpp
+cDEiCjE0MDU1OgtAaXRlbnN7ByIGMW86CUl0ZW0KOwgiBjE6EUBkZXNjcmlw
+dGlvbiIOcHJvZHV0bzAxOgxAd2VpZ2h0ZhswLjEwMDAwMDAwMDAwMDAwMDAx
+AJmaOgtAcHJpY2VmCTExLjU6DkBxdWFudGl0eWkGIgYybzsPCjsIIgYyOxAi
+D3Byb2R1Y3RvMDI7EWYbMC4yMDAwMDAwMDAwMDAwMDAwMQCZmjsSZhoyMi4z
+MDAwMDAwMDAwMDAwMDEAzM07E2kHIgpmbGFzaElDOidBY3Rpb25Db250cm9s
+bGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--fe77e033df693f3e46a04a0e046d7b8e15fd23ef
+  Parameters: {"action"=>"index", "controller"=>"pagseguro"}
+Rendering pagseguro/index
+Completed in 0.01080 (92 reqs/sec) | Rendering: 0.00902 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro]
+
+
+Processing PagseguroController#price_frete (for 127.0.0.1 at 2008-11-01 16:21:55) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudCIMMjIuNjk5OToKQHppcDIiCDQ5MDoLQGJ1eWVyMDoKQHpp
+cDEiCjE0MDU1OgtAaXRlbnN7ByIGMW86CUl0ZW0KOwgiBjE6EUBkZXNjcmlw
+dGlvbiIOcHJvZHV0bzAxOgxAd2VpZ2h0ZhswLjEwMDAwMDAwMDAwMDAwMDAx
+AJmaOgtAcHJpY2VmCTExLjU6DkBxdWFudGl0eWkGIgYybzsPCjsIIgYyOxAi
+D3Byb2R1Y3RvMDI7EWYbMC4yMDAwMDAwMDAwMDAwMDAwMQCZmjsSZhoyMi4z
+MDAwMDAwMDAwMDAwMDEAzM07E2kHIgpmbGFzaElDOidBY3Rpb25Db250cm9s
+bGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--fe77e033df693f3e46a04a0e046d7b8e15fd23ef
+  Parameters: {"authenticity_token"=>"b1c27355904a9948c5614f77d004a3b14bb470ad", "action"=>"price_frete", "value"=>"04515+030+true+false", "controller"=>"pagseguro"}
+
+
+TypeError (String can't be coerced into Float):
+    /vendor/plugins/breshop/general/rails/../lib/general/sale.rb:47:in `+'
+    /vendor/plugins/breshop/general/rails/../lib/general/sale.rb:47:in `price'
+    /app/controllers/pagseguro_controller.rb:58:in `price_frete'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:1162:in `perform_action_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:580:in `call_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:573:in `perform_action_without_benchmark'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /Library/Ruby/Gems/1.8/gems/activerecord-2.1.0/lib/active_record/query_cache.rb:8:in `cache'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `send'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:529:in `process_without_filters'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/filters.rb:569:in `process_without_session_management_support'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/session_management.rb:130:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/base.rb:389:in `process'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:76:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/../lib/mongrel/rails.rb:74:in `process'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:159:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:158:in `process_client'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:285:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `initialize'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `new'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel.rb:268:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:282:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `each'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/configurator.rb:281:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:128:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/lib/mongrel/command.rb:212:in `run'
+    /System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.4/bin/mongrel_rails:281
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:502:in `load'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/servers/mongrel.rb:64
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:354:in `new_constants_in'
+    /Library/Ruby/Gems/1.8/gems/activesupport-2.1.0/lib/active_support/dependencies.rb:509:in `require'
+    /Library/Ruby/Gems/1.8/gems/rails-2.1.0/lib/commands/server.rb:39
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `gem_original_require'
+    /Library/Ruby/Site/1.8/rubygems/custom_require.rb:27:in `require'
+    ./script/server:3
+
+Rendering /Library/Ruby/Gems/1.8/gems/actionpack-2.1.0/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing PagseguroController#index (for 127.0.0.1 at 2008-11-01 16:21:59) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudCIMMjIuMTk5OToKQHppcDIiCDAzMDoLQGJ1eWVyMDoKQHpp
+cDEiCjA0NTE1OgtAaXRlbnN7ByIGMW86CUl0ZW0KOwgiBjE6EUBkZXNjcmlw
+dGlvbiIOcHJvZHV0bzAxOgxAd2VpZ2h0ZhswLjEwMDAwMDAwMDAwMDAwMDAx
+AJmaOgtAcHJpY2VmCTExLjU6DkBxdWFudGl0eWkGIgYybzsPCjsIIgYyOxAi
+D3Byb2R1Y3RvMDI7EWYbMC4yMDAwMDAwMDAwMDAwMDAwMQCZmjsSZhoyMi4z
+MDAwMDAwMDAwMDAwMDEAzM07E2kHIgpmbGFzaElDOidBY3Rpb25Db250cm9s
+bGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--fdfd605752300582924cc18975362b37c7719b79
+  Parameters: {"action"=>"index", "controller"=>"pagseguro"}
+Rendering pagseguro/index
+Completed in 0.00470 (212 reqs/sec) | Rendering: 0.00301 (64%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro]
+
+
+Processing PagseguroController#index (for 127.0.0.1 at 2008-11-01 16:22:59) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudCIMMjIuMTk5OToKQHppcDIiCDAzMDoLQGJ1eWVyMDoKQHpp
+cDEiCjA0NTE1OgtAaXRlbnN7ByIGMW86CUl0ZW0KOwgiBjE6EUBkZXNjcmlw
+dGlvbiIOcHJvZHV0bzAxOgxAd2VpZ2h0ZhswLjEwMDAwMDAwMDAwMDAwMDAx
+AJmaOgtAcHJpY2VmCTExLjU6DkBxdWFudGl0eWkGIgYybzsPCjsIIgYyOxAi
+D3Byb2R1Y3RvMDI7EWYbMC4yMDAwMDAwMDAwMDAwMDAwMQCZmjsSZhoyMi4z
+MDAwMDAwMDAwMDAwMDEAzM07E2kHIgpmbGFzaElDOidBY3Rpb25Db250cm9s
+bGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--fdfd605752300582924cc18975362b37c7719b79
+  Parameters: {"action"=>"index", "controller"=>"pagseguro"}
+Rendering pagseguro/index
+Completed in 0.01028 (97 reqs/sec) | Rendering: 0.00851 (82%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro]
+
+
+Processing PagseguroController#price_frete (for 127.0.0.1 at 2008-11-01 16:23:02) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudCIMMjIuMTk5OToKQHppcDIiCDAzMDoLQGJ1eWVyMDoKQHpp
+cDEiCjA0NTE1OgtAaXRlbnN7ByIGMW86CUl0ZW0KOwgiBjE6EUBkZXNjcmlw
+dGlvbiIOcHJvZHV0bzAxOgxAd2VpZ2h0ZhswLjEwMDAwMDAwMDAwMDAwMDAx
+AJmaOgtAcHJpY2VmCTExLjU6DkBxdWFudGl0eWkGIgYybzsPCjsIIgYyOxAi
+D3Byb2R1Y3RvMDI7EWYbMC4yMDAwMDAwMDAwMDAwMDAwMQCZmjsSZhoyMi4z
+MDAwMDAwMDAwMDAwMDEAzM07E2kHIgpmbGFzaElDOidBY3Rpb25Db250cm9s
+bGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--fdfd605752300582924cc18975362b37c7719b79
+  Parameters: {"authenticity_token"=>"b1c27355904a9948c5614f77d004a3b14bb470ad", "action"=>"price_frete", "value"=>"04515+030+true+false", "controller"=>"pagseguro"}
+Completed in 0.21119 (4 reqs/sec) | Rendering: 0.00034 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro/price_frete]
+
+
+Processing PagseguroController#price_frete (for 127.0.0.1 at 2008-11-01 16:23:13) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudGYPMjIuMTk5OQB4bDoKQHppcDIiCDAzMDoLQGJ1eWVyMDoK
+QHppcDEiCjA0NTE1OgtAaXRlbnN7ByIGMW86CUl0ZW0KOwgiBjE6EUBkZXNj
+cmlwdGlvbiIOcHJvZHV0bzAxOgxAd2VpZ2h0ZhswLjEwMDAwMDAwMDAwMDAw
+MDAxAJmaOgtAcHJpY2VmCTExLjU6DkBxdWFudGl0eWkGIgYybzsPCjsIIgYy
+OxAiD3Byb2R1Y3RvMDI7EWYbMC4yMDAwMDAwMDAwMDAwMDAwMQCZmjsSZhoy
+Mi4zMDAwMDAwMDAwMDAwMDEAzM07E2kHIgpmbGFzaElDOidBY3Rpb25Db250
+cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--c87ac32f8c07e87b799e55b7fdfd70acec3039bd
+  Parameters: {"authenticity_token"=>"b1c27355904a9948c5614f77d004a3b14bb470ad", "action"=>"price_frete", "value"=>"14055+490+true+false", "controller"=>"pagseguro"}
+Completed in 0.21071 (4 reqs/sec) | Rendering: 0.00030 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro/price_frete]
+
+
+Processing PagseguroController#index (for 127.0.0.1 at 2008-11-01 16:23:45) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudGYPMjIuNjk5OQB4bDoKQHppcDIiCDQ5MDoLQGJ1eWVyMDoK
+QHppcDEiCjE0MDU1OgtAaXRlbnN7ByIGMW86CUl0ZW0KOwgiBjE6EUBkZXNj
+cmlwdGlvbiIOcHJvZHV0bzAxOgxAd2VpZ2h0ZhswLjEwMDAwMDAwMDAwMDAw
+MDAxAJmaOgtAcHJpY2VmCTExLjU6DkBxdWFudGl0eWkGIgYybzsPCjsIIgYy
+OxAiD3Byb2R1Y3RvMDI7EWYbMC4yMDAwMDAwMDAwMDAwMDAwMQCZmjsSZhoy
+Mi4zMDAwMDAwMDAwMDAwMDEAzM07E2kHIgpmbGFzaElDOidBY3Rpb25Db250
+cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--0356643c843b50a7ec5382d49f0b398fc2933398
+  Parameters: {"action"=>"index", "controller"=>"pagseguro"}
+Rendering pagseguro/index
+Completed in 0.00431 (231 reqs/sec) | Rendering: 0.00267 (61%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro]
+
+
+Processing PagseguroController#price_frete (for 127.0.0.1 at 2008-11-01 16:23:47) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudGYPMjIuNjk5OQB4bDoKQHppcDIiCDQ5MDoLQGJ1eWVyMDoK
+QHppcDEiCjE0MDU1OgtAaXRlbnN7ByIGMW86CUl0ZW0KOwgiBjE6EUBkZXNj
+cmlwdGlvbiIOcHJvZHV0bzAxOgxAd2VpZ2h0ZhswLjEwMDAwMDAwMDAwMDAw
+MDAxAJmaOgtAcHJpY2VmCTExLjU6DkBxdWFudGl0eWkGIgYybzsPCjsIIgYy
+OxAiD3Byb2R1Y3RvMDI7EWYbMC4yMDAwMDAwMDAwMDAwMDAwMQCZmjsSZhoy
+Mi4zMDAwMDAwMDAwMDAwMDEAzM07E2kHIgpmbGFzaElDOidBY3Rpb25Db250
+cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--0356643c843b50a7ec5382d49f0b398fc2933398
+  Parameters: {"authenticity_token"=>"b1c27355904a9948c5614f77d004a3b14bb470ad", "action"=>"price_frete", "value"=>"14055+490+true+false", "controller"=>"pagseguro"}
+Completed in 0.20700 (4 reqs/sec) | Rendering: 0.00026 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro/price_frete]
+
+
+Processing PagseguroController#index (for 127.0.0.1 at 2008-11-01 16:23:55) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudGYPMjIuNjk5OQB4bDoKQHppcDIiCDQ5MDoLQGJ1eWVyMDoK
+QHppcDEiCjE0MDU1OgtAaXRlbnN7ByIGMW86CUl0ZW0KOwgiBjE6EUBkZXNj
+cmlwdGlvbiIOcHJvZHV0bzAxOgxAd2VpZ2h0ZhswLjEwMDAwMDAwMDAwMDAw
+MDAxAJmaOgtAcHJpY2VmCTExLjU6DkBxdWFudGl0eWkGIgYybzsPCjsIIgYy
+OxAiD3Byb2R1Y3RvMDI7EWYbMC4yMDAwMDAwMDAwMDAwMDAwMQCZmjsSZhoy
+Mi4zMDAwMDAwMDAwMDAwMDEAzM07E2kHIgpmbGFzaElDOidBY3Rpb25Db250
+cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--0356643c843b50a7ec5382d49f0b398fc2933398
+  Parameters: {"action"=>"index", "controller"=>"pagseguro"}
+Rendering pagseguro/index
+Completed in 0.00451 (221 reqs/sec) | Rendering: 0.00283 (62%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro]
+
+
+Processing PagseguroController#index (for 127.0.0.1 at 2008-11-01 16:23:57) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudGYPMjIuNjk5OQB4bDoKQHppcDIiCDQ5MDoLQGJ1eWVyMDoK
+QHppcDEiCjE0MDU1OgtAaXRlbnN7ByIGMW86CUl0ZW0KOwgiBjE6EUBkZXNj
+cmlwdGlvbiIOcHJvZHV0bzAxOgxAd2VpZ2h0ZhswLjEwMDAwMDAwMDAwMDAw
+MDAxAJmaOgtAcHJpY2VmCTExLjU6DkBxdWFudGl0eWkGIgYybzsPCjsIIgYy
+OxAiD3Byb2R1Y3RvMDI7EWYbMC4yMDAwMDAwMDAwMDAwMDAwMQCZmjsSZhoy
+Mi4zMDAwMDAwMDAwMDAwMDEAzM07E2kHIgpmbGFzaElDOidBY3Rpb25Db250
+cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--0356643c843b50a7ec5382d49f0b398fc2933398
+  Parameters: {"action"=>"index", "controller"=>"pagseguro"}
+Rendering pagseguro/index
+Completed in 0.00471 (212 reqs/sec) | Rendering: 0.00289 (61%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro]
+
+
+Processing PagseguroController#price_frete (for 127.0.0.1 at 2008-11-01 16:23:58) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudGYPMjIuNjk5OQB4bDoKQHppcDIiCDQ5MDoLQGJ1eWVyMDoK
+QHppcDEiCjE0MDU1OgtAaXRlbnN7ByIGMW86CUl0ZW0KOwgiBjE6EUBkZXNj
+cmlwdGlvbiIOcHJvZHV0bzAxOgxAd2VpZ2h0ZhswLjEwMDAwMDAwMDAwMDAw
+MDAxAJmaOgtAcHJpY2VmCTExLjU6DkBxdWFudGl0eWkGIgYybzsPCjsIIgYy
+OxAiD3Byb2R1Y3RvMDI7EWYbMC4yMDAwMDAwMDAwMDAwMDAwMQCZmjsSZhoy
+Mi4zMDAwMDAwMDAwMDAwMDEAzM07E2kHIgpmbGFzaElDOidBY3Rpb25Db250
+cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--0356643c843b50a7ec5382d49f0b398fc2933398
+  Parameters: {"authenticity_token"=>"b1c27355904a9948c5614f77d004a3b14bb470ad", "action"=>"price_frete", "value"=>"14055+490+true+false", "controller"=>"pagseguro"}
+Completed in 0.21223 (4 reqs/sec) | Rendering: 0.00033 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro/price_frete]
+
+
+Processing PagseguroController#price_frete (for 127.0.0.1 at 2008-11-01 16:24:01) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudGYPMjIuNjk5OQB4bDoKQHppcDIiCDQ5MDoLQGJ1eWVyMDoK
+QHppcDEiCjE0MDU1OgtAaXRlbnN7ByIGMW86CUl0ZW0KOwgiBjE6EUBkZXNj
+cmlwdGlvbiIOcHJvZHV0bzAxOgxAd2VpZ2h0ZhswLjEwMDAwMDAwMDAwMDAw
+MDAxAJmaOgtAcHJpY2VmCTExLjU6DkBxdWFudGl0eWkGIgYybzsPCjsIIgYy
+OxAiD3Byb2R1Y3RvMDI7EWYbMC4yMDAwMDAwMDAwMDAwMDAwMQCZmjsSZhoy
+Mi4zMDAwMDAwMDAwMDAwMDEAzM07E2kHIgpmbGFzaElDOidBY3Rpb25Db250
+cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--0356643c843b50a7ec5382d49f0b398fc2933398
+  Parameters: {"authenticity_token"=>"b1c27355904a9948c5614f77d004a3b14bb470ad", "action"=>"price_frete", "value"=>"14055+490+false+true", "controller"=>"pagseguro"}
+Completed in 0.20752 (4 reqs/sec) | Rendering: 0.00025 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro/price_frete]
+
+
+Processing PagseguroController#index (for 127.0.0.1 at 2008-11-01 16:24:04) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHRU46
+DkBzaGlwbWVudGYPMjIuNjk5OQB4bDoKQHppcDIiCDQ5MDoLQGJ1eWVyMDoK
+QHppcDEiCjE0MDU1OgtAaXRlbnN7ByIGMW86CUl0ZW0KOwgiBjE6EUBkZXNj
+cmlwdGlvbiIOcHJvZHV0bzAxOgxAd2VpZ2h0ZhswLjEwMDAwMDAwMDAwMDAw
+MDAxAJmaOgtAcHJpY2VmCTExLjU6DkBxdWFudGl0eWkGIgYybzsPCjsIIgYy
+OxAiD3Byb2R1Y3RvMDI7EWYbMC4yMDAwMDAwMDAwMDAwMDAwMQCZmjsSZhoy
+Mi4zMDAwMDAwMDAwMDAwMDEAzM07E2kHIgpmbGFzaElDOidBY3Rpb25Db250
+cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--c4e31aeecaaad8755ee8adb4426d188c1ad74f37
+  Parameters: {"action"=>"index", "controller"=>"pagseguro"}
+Rendering pagseguro/index
+Completed in 0.00458 (218 reqs/sec) | Rendering: 0.00289 (63%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro]
+
+
+Processing PagseguroController#price_frete (for 127.0.0.1 at 2008-11-01 16:24:39) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHRU46
+DkBzaGlwbWVudGYPMjIuNjk5OQB4bDoKQHppcDIiCDQ5MDoLQGJ1eWVyMDoK
+QHppcDEiCjE0MDU1OgtAaXRlbnN7ByIGMW86CUl0ZW0KOwgiBjE6EUBkZXNj
+cmlwdGlvbiIOcHJvZHV0bzAxOgxAd2VpZ2h0ZhswLjEwMDAwMDAwMDAwMDAw
+MDAxAJmaOgtAcHJpY2VmCTExLjU6DkBxdWFudGl0eWkGIgYybzsPCjsIIgYy
+OxAiD3Byb2R1Y3RvMDI7EWYbMC4yMDAwMDAwMDAwMDAwMDAwMQCZmjsSZhoy
+Mi4zMDAwMDAwMDAwMDAwMDEAzM07E2kHIgpmbGFzaElDOidBY3Rpb25Db250
+cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--c4e31aeecaaad8755ee8adb4426d188c1ad74f37
+  Parameters: {"authenticity_token"=>"b1c27355904a9948c5614f77d004a3b14bb470ad", "action"=>"price_frete", "value"=>"14055+490+false+true", "controller"=>"pagseguro"}
+Completed in 0.20863 (4 reqs/sec) | Rendering: 0.00032 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro/price_frete]
+
+
+Processing PagseguroController#index (for 127.0.0.1 at 2008-11-01 16:25:06) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHRU46
+DkBzaGlwbWVudGYPMjIuNjk5OQB4bDoKQHppcDIiCDQ5MDoLQGJ1eWVyMDoK
+QHppcDEiCjE0MDU1OgtAaXRlbnN7ByIGMW86CUl0ZW0KOwgiBjE6EUBkZXNj
+cmlwdGlvbiIOcHJvZHV0bzAxOgxAd2VpZ2h0ZhswLjEwMDAwMDAwMDAwMDAw
+MDAxAJmaOgtAcHJpY2VmCTExLjU6DkBxdWFudGl0eWkGIgYybzsPCjsIIgYy
+OxAiD3Byb2R1Y3RvMDI7EWYbMC4yMDAwMDAwMDAwMDAwMDAwMQCZmjsSZhoy
+Mi4zMDAwMDAwMDAwMDAwMDEAzM07E2kHIgpmbGFzaElDOidBY3Rpb25Db250
+cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--c4e31aeecaaad8755ee8adb4426d188c1ad74f37
+  Parameters: {"action"=>"index", "controller"=>"pagseguro"}
+Rendering pagseguro/index
+Completed in 0.00442 (226 reqs/sec) | Rendering: 0.00274 (62%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro]
+
+
+Processing PagseguroController#price_frete (for 127.0.0.1 at 2008-11-01 16:25:09) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHRU46
+DkBzaGlwbWVudGYPMjIuNjk5OQB4bDoKQHppcDIiCDQ5MDoLQGJ1eWVyMDoK
+QHppcDEiCjE0MDU1OgtAaXRlbnN7ByIGMW86CUl0ZW0KOwgiBjE6EUBkZXNj
+cmlwdGlvbiIOcHJvZHV0bzAxOgxAd2VpZ2h0ZhswLjEwMDAwMDAwMDAwMDAw
+MDAxAJmaOgtAcHJpY2VmCTExLjU6DkBxdWFudGl0eWkGIgYybzsPCjsIIgYy
+OxAiD3Byb2R1Y3RvMDI7EWYbMC4yMDAwMDAwMDAwMDAwMDAwMQCZmjsSZhoy
+Mi4zMDAwMDAwMDAwMDAwMDEAzM07E2kHIgpmbGFzaElDOidBY3Rpb25Db250
+cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--c4e31aeecaaad8755ee8adb4426d188c1ad74f37
+  Parameters: {"authenticity_token"=>"b1c27355904a9948c5614f77d004a3b14bb470ad", "action"=>"price_frete", "value"=>"14055+490+false+true", "controller"=>"pagseguro"}
+Completed in 0.26958 (3 reqs/sec) | Rendering: 0.00023 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro/price_frete]
+
+
+Processing PagseguroController#price_frete (for 127.0.0.1 at 2008-11-01 16:25:21) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHRU46
+DkBzaGlwbWVudGYaMjUuMzk5ODk5OTk5OTk5OTk5AKufOgpAemlwMiIINDkw
+OgtAYnV5ZXIwOgpAemlwMSIKMTQwNTU6C0BpdGVuc3sHIgYxbzoJSXRlbQo7
+CCIGMToRQGRlc2NyaXB0aW9uIg5wcm9kdXRvMDE6DEB3ZWlnaHRmGzAuMTAw
+MDAwMDAwMDAwMDAwMDEAmZo6C0BwcmljZWYJMTEuNToOQHF1YW50aXR5aQYi
+BjJvOw8KOwgiBjI7ECIPcHJvZHVjdG8wMjsRZhswLjIwMDAwMDAwMDAwMDAw
+MDAxAJmaOxJmGjIyLjMwMDAwMDAwMDAwMDAwMQDMzTsTaQciCmZsYXNoSUM6
+J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2Vk
+ewA=--5d0bf956be2982fc9964232be96e10b1cf2a264b
+  Parameters: {"authenticity_token"=>"b1c27355904a9948c5614f77d004a3b14bb470ad", "action"=>"price_frete", "value"=>"14055+490+false+true", "controller"=>"pagseguro"}
+Completed in 0.21207 (4 reqs/sec) | Rendering: 0.00032 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro/price_frete]
+
+
+Processing PagseguroController#index (for 127.0.0.1 at 2008-11-01 16:25:28) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHRU46
+DkBzaGlwbWVudGYPMjIuNjk5OQB4bDoKQHppcDIiCDQ5MDoLQGJ1eWVyMDoK
+QHppcDEiCjE0MDU1OgtAaXRlbnN7ByIGMW86CUl0ZW0KOwgiBjE6EUBkZXNj
+cmlwdGlvbiIOcHJvZHV0bzAxOgxAd2VpZ2h0ZhswLjEwMDAwMDAwMDAwMDAw
+MDAxAJmaOgtAcHJpY2VmCTExLjU6DkBxdWFudGl0eWkGIgYybzsPCjsIIgYy
+OxAiD3Byb2R1Y3RvMDI7EWYbMC4yMDAwMDAwMDAwMDAwMDAwMQCZmjsSZhoy
+Mi4zMDAwMDAwMDAwMDAwMDEAzM07E2kHIgpmbGFzaElDOidBY3Rpb25Db250
+cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--c4e31aeecaaad8755ee8adb4426d188c1ad74f37
+  Parameters: {"action"=>"index", "controller"=>"pagseguro"}
+Rendering pagseguro/index
+Completed in 0.00447 (223 reqs/sec) | Rendering: 0.00271 (60%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro]
+
+
+Processing PagseguroController#price_frete (for 127.0.0.1 at 2008-11-01 16:25:30) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHRU46
+DkBzaGlwbWVudGYPMjIuNjk5OQB4bDoKQHppcDIiCDQ5MDoLQGJ1eWVyMDoK
+QHppcDEiCjE0MDU1OgtAaXRlbnN7ByIGMW86CUl0ZW0KOwgiBjE6EUBkZXNj
+cmlwdGlvbiIOcHJvZHV0bzAxOgxAd2VpZ2h0ZhswLjEwMDAwMDAwMDAwMDAw
+MDAxAJmaOgtAcHJpY2VmCTExLjU6DkBxdWFudGl0eWkGIgYybzsPCjsIIgYy
+OxAiD3Byb2R1Y3RvMDI7EWYbMC4yMDAwMDAwMDAwMDAwMDAwMQCZmjsSZhoy
+Mi4zMDAwMDAwMDAwMDAwMDEAzM07E2kHIgpmbGFzaElDOidBY3Rpb25Db250
+cm9sbGVyOjpGbGFzaDo6Rmxhc2hIYXNoewAGOgpAdXNlZHsA--c4e31aeecaaad8755ee8adb4426d188c1ad74f37
+  Parameters: {"authenticity_token"=>"b1c27355904a9948c5614f77d004a3b14bb470ad", "action"=>"price_frete", "value"=>"14055+490+false+true", "controller"=>"pagseguro"}
+Completed in 1.32270 (0 reqs/sec) | Rendering: 0.00028 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro/price_frete]
+
+
+Processing PagseguroController#index (for 127.0.0.1 at 2008-11-01 16:25:44) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHRU46
+DkBzaGlwbWVudGYaMjUuMzk5ODk5OTk5OTk5OTk5AKufOgpAemlwMiIINDkw
+OgtAYnV5ZXIwOgpAemlwMSIKMTQwNTU6C0BpdGVuc3sHIgYxbzoJSXRlbQo7
+CCIGMToRQGRlc2NyaXB0aW9uIg5wcm9kdXRvMDE6DEB3ZWlnaHRmGzAuMTAw
+MDAwMDAwMDAwMDAwMDEAmZo6C0BwcmljZWYJMTEuNToOQHF1YW50aXR5aQYi
+BjJvOw8KOwgiBjI7ECIPcHJvZHVjdG8wMjsRZhswLjIwMDAwMDAwMDAwMDAw
+MDAxAJmaOxJmGjIyLjMwMDAwMDAwMDAwMDAwMQDMzTsTaQciCmZsYXNoSUM6
+J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2Vk
+ewA=--5d0bf956be2982fc9964232be96e10b1cf2a264b
+  Parameters: {"action"=>"index", "controller"=>"pagseguro"}
+Rendering pagseguro/index
+Completed in 0.00430 (232 reqs/sec) | Rendering: 0.00265 (61%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro]
+
+
+Processing PagseguroController#price_frete (for 127.0.0.1 at 2008-11-01 16:25:46) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHRU46
+DkBzaGlwbWVudGYaMjUuMzk5ODk5OTk5OTk5OTk5AKufOgpAemlwMiIINDkw
+OgtAYnV5ZXIwOgpAemlwMSIKMTQwNTU6C0BpdGVuc3sHIgYxbzoJSXRlbQo7
+CCIGMToRQGRlc2NyaXB0aW9uIg5wcm9kdXRvMDE6DEB3ZWlnaHRmGzAuMTAw
+MDAwMDAwMDAwMDAwMDEAmZo6C0BwcmljZWYJMTEuNToOQHF1YW50aXR5aQYi
+BjJvOw8KOwgiBjI7ECIPcHJvZHVjdG8wMjsRZhswLjIwMDAwMDAwMDAwMDAw
+MDAxAJmaOxJmGjIyLjMwMDAwMDAwMDAwMDAwMQDMzTsTaQciCmZsYXNoSUM6
+J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2Vk
+ewA=--5d0bf956be2982fc9964232be96e10b1cf2a264b
+  Parameters: {"authenticity_token"=>"b1c27355904a9948c5614f77d004a3b14bb470ad", "action"=>"price_frete", "value"=>"14055+490+false+true", "controller"=>"pagseguro"}
+Completed in 0.21161 (4 reqs/sec) | Rendering: 0.00035 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro/price_frete]
+
+
+Processing PagseguroController#price_frete (for 127.0.0.1 at 2008-11-01 16:25:51) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHRU46
+DkBzaGlwbWVudGYaMjUuMzk5ODk5OTk5OTk5OTk5AKufOgpAemlwMiIINDkw
+OgtAYnV5ZXIwOgpAemlwMSIKMTQwNTU6C0BpdGVuc3sHIgYxbzoJSXRlbQo7
+CCIGMToRQGRlc2NyaXB0aW9uIg5wcm9kdXRvMDE6DEB3ZWlnaHRmGzAuMTAw
+MDAwMDAwMDAwMDAwMDEAmZo6C0BwcmljZWYJMTEuNToOQHF1YW50aXR5aQYi
+BjJvOw8KOwgiBjI7ECIPcHJvZHVjdG8wMjsRZhswLjIwMDAwMDAwMDAwMDAw
+MDAxAJmaOxJmGjIyLjMwMDAwMDAwMDAwMDAwMQDMzTsTaQciCmZsYXNoSUM6
+J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2Vk
+ewA=--5d0bf956be2982fc9964232be96e10b1cf2a264b
+  Parameters: {"authenticity_token"=>"b1c27355904a9948c5614f77d004a3b14bb470ad", "action"=>"price_frete", "value"=>"14055+490+true+false", "controller"=>"pagseguro"}
+Completed in 0.27604 (3 reqs/sec) | Rendering: 0.00023 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro/price_frete]
+
+
+Processing PagseguroController#price_frete (for 127.0.0.1 at 2008-11-01 16:25:59) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudGYaMjUuMzk5ODk5OTk5OTk5OTk5AKufOgpAemlwMiIINDkw
+OgtAYnV5ZXIwOgpAemlwMSIKMTQwNTU6C0BpdGVuc3sHIgYxbzoJSXRlbQo7
+CCIGMToRQGRlc2NyaXB0aW9uIg5wcm9kdXRvMDE6DEB3ZWlnaHRmGzAuMTAw
+MDAwMDAwMDAwMDAwMDEAmZo6C0BwcmljZWYJMTEuNToOQHF1YW50aXR5aQYi
+BjJvOw8KOwgiBjI7ECIPcHJvZHVjdG8wMjsRZhswLjIwMDAwMDAwMDAwMDAw
+MDAxAJmaOxJmGjIyLjMwMDAwMDAwMDAwMDAwMQDMzTsTaQciCmZsYXNoSUM6
+J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2Vk
+ewA=--d11d8643d6e19db4a156ec2a4bb49d63ee4c2a42
+  Parameters: {"authenticity_token"=>"b1c27355904a9948c5614f77d004a3b14bb470ad", "action"=>"price_frete", "value"=>"04515+030+true+false", "controller"=>"pagseguro"}
+Completed in 0.21069 (4 reqs/sec) | Rendering: 0.00022 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro/price_frete]
+
+
+Processing PagseguroController#index (for 127.0.0.1 at 2008-11-01 16:26:03) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudGYaMjQuMjk5OTAwMDAwMDAwMDAxABIGOgpAemlwMiIIMDMw
+OgtAYnV5ZXIwOgpAemlwMSIKMDQ1MTU6C0BpdGVuc3sHIgYxbzoJSXRlbQo7
+CCIGMToRQGRlc2NyaXB0aW9uIg5wcm9kdXRvMDE6DEB3ZWlnaHRmGzAuMTAw
+MDAwMDAwMDAwMDAwMDEAmZo6C0BwcmljZWYJMTEuNToOQHF1YW50aXR5aQYi
+BjJvOw8KOwgiBjI7ECIPcHJvZHVjdG8wMjsRZhswLjIwMDAwMDAwMDAwMDAw
+MDAxAJmaOxJmGjIyLjMwMDAwMDAwMDAwMDAwMQDMzTsTaQciCmZsYXNoSUM6
+J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2Vk
+ewA=--af430d368cd6823dc98f37450a0649c732a79912
+  Parameters: {"action"=>"index", "controller"=>"pagseguro"}
+Rendering pagseguro/index
+Completed in 0.00458 (218 reqs/sec) | Rendering: 0.00289 (63%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro]
+
+
+Processing PagseguroController#index (for 127.0.0.1 at 2008-11-01 16:26:45) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudGYaMjQuMjk5OTAwMDAwMDAwMDAxABIGOgpAemlwMiIIMDMw
+OgtAYnV5ZXIwOgpAemlwMSIKMDQ1MTU6C0BpdGVuc3sHIgYxbzoJSXRlbQo7
+CCIGMToRQGRlc2NyaXB0aW9uIg5wcm9kdXRvMDE6DEB3ZWlnaHRmGzAuMTAw
+MDAwMDAwMDAwMDAwMDEAmZo6C0BwcmljZWYJMTEuNToOQHF1YW50aXR5aQYi
+BjJvOw8KOwgiBjI7ECIPcHJvZHVjdG8wMjsRZhswLjIwMDAwMDAwMDAwMDAw
+MDAxAJmaOxJmGjIyLjMwMDAwMDAwMDAwMDAwMQDMzTsTaQciCmZsYXNoSUM6
+J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2Vk
+ewA=--af430d368cd6823dc98f37450a0649c732a79912
+  Parameters: {"action"=>"index", "controller"=>"pagseguro"}
+Rendering pagseguro/index
+Completed in 0.00450 (222 reqs/sec) | Rendering: 0.00279 (62%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro]
+
+
+Processing PagseguroController#price_frete (for 127.0.0.1 at 2008-11-01 16:26:46) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudGYaMjQuMjk5OTAwMDAwMDAwMDAxABIGOgpAemlwMiIIMDMw
+OgtAYnV5ZXIwOgpAemlwMSIKMDQ1MTU6C0BpdGVuc3sHIgYxbzoJSXRlbQo7
+CCIGMToRQGRlc2NyaXB0aW9uIg5wcm9kdXRvMDE6DEB3ZWlnaHRmGzAuMTAw
+MDAwMDAwMDAwMDAwMDEAmZo6C0BwcmljZWYJMTEuNToOQHF1YW50aXR5aQYi
+BjJvOw8KOwgiBjI7ECIPcHJvZHVjdG8wMjsRZhswLjIwMDAwMDAwMDAwMDAw
+MDAxAJmaOxJmGjIyLjMwMDAwMDAwMDAwMDAwMQDMzTsTaQciCmZsYXNoSUM6
+J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2Vk
+ewA=--af430d368cd6823dc98f37450a0649c732a79912
+  Parameters: {"authenticity_token"=>"b1c27355904a9948c5614f77d004a3b14bb470ad", "action"=>"price_frete", "value"=>"04515+030+true+false", "controller"=>"pagseguro"}
+Completed in 0.21274 (4 reqs/sec) | Rendering: 0.00033 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro/price_frete]
+
+
+Processing PagseguroController#price_frete (for 127.0.0.1 at 2008-11-01 16:27:29) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudGYQOS4xMDM5OTkAoic6CkB6aXAyIggwMzA6C0BidXllcjA6
+CkB6aXAxIgowNDUxNToLQGl0ZW5zewciBjFvOglJdGVtCjsIIgYxOhFAZGVz
+Y3JpcHRpb24iDnByb2R1dG8wMToMQHdlaWdodGYbMC4xMDAwMDAwMDAwMDAw
+MDAwMQCZmjoLQHByaWNlZgkxMS41Og5AcXVhbnRpdHlpBiIGMm87Dwo7CCIG
+MjsQIg9wcm9kdWN0bzAyOxFmGzAuMjAwMDAwMDAwMDAwMDAwMDEAmZo7EmYa
+MjIuMzAwMDAwMDAwMDAwMDAxAMzNOxNpByIKZmxhc2hJQzonQWN0aW9uQ29u
+dHJvbGxlcjo6Rmxhc2g6OkZsYXNoSGFzaHsABjoKQHVzZWR7AA==--3a901692d77b533e62b89b1167f66e7028c26fab
+  Parameters: {"authenticity_token"=>"b1c27355904a9948c5614f77d004a3b14bb470ad", "action"=>"price_frete", "value"=>"14055+490+true+false", "controller"=>"pagseguro"}
+Completed in 0.22532 (4 reqs/sec) | Rendering: 0.00032 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro/price_frete]
+
+
+Processing PagseguroController#index (for 127.0.0.1 at 2008-11-01 16:27:32) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudGYaMTAuMDUyMDM5OTkwMDAwMDAxAESyOgpAemlwMiIINDkw
+OgtAYnV5ZXIwOgpAemlwMSIKMTQwNTU6C0BpdGVuc3sHIgYxbzoJSXRlbQo7
+CCIGMToRQGRlc2NyaXB0aW9uIg5wcm9kdXRvMDE6DEB3ZWlnaHRmGzAuMTAw
+MDAwMDAwMDAwMDAwMDEAmZo6C0BwcmljZWYJMTEuNToOQHF1YW50aXR5aQYi
+BjJvOw8KOwgiBjI7ECIPcHJvZHVjdG8wMjsRZhswLjIwMDAwMDAwMDAwMDAw
+MDAxAJmaOxJmGjIyLjMwMDAwMDAwMDAwMDAwMQDMzTsTaQciCmZsYXNoSUM6
+J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2Vk
+ewA=--1d4c61d7fcc5954afde350534ef7e6db3fb8265c
+  Parameters: {"action"=>"index", "controller"=>"pagseguro"}
+Rendering pagseguro/index
+Completed in 0.00474 (211 reqs/sec) | Rendering: 0.00297 (62%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro]
+
+
+Processing PagseguroController#index (for 127.0.0.1 at 2008-11-01 16:28:10) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudGYaMTAuMDUyMDM5OTkwMDAwMDAxAESyOgpAemlwMiIINDkw
+OgtAYnV5ZXIwOgpAemlwMSIKMTQwNTU6C0BpdGVuc3sHIgYxbzoJSXRlbQo7
+CCIGMToRQGRlc2NyaXB0aW9uIg5wcm9kdXRvMDE6DEB3ZWlnaHRmGzAuMTAw
+MDAwMDAwMDAwMDAwMDEAmZo6C0BwcmljZWYJMTEuNToOQHF1YW50aXR5aQYi
+BjJvOw8KOwgiBjI7ECIPcHJvZHVjdG8wMjsRZhswLjIwMDAwMDAwMDAwMDAw
+MDAxAJmaOxJmGjIyLjMwMDAwMDAwMDAwMDAwMQDMzTsTaQciCmZsYXNoSUM6
+J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2Vk
+ewA=--1d4c61d7fcc5954afde350534ef7e6db3fb8265c
+  Parameters: {"action"=>"index", "controller"=>"pagseguro"}
+Rendering pagseguro/index
+Completed in 0.00473 (211 reqs/sec) | Rendering: 0.00293 (61%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro]
+
+
+Processing PagseguroController#price_frete (for 127.0.0.1 at 2008-11-01 16:28:12) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudGYaMTAuMDUyMDM5OTkwMDAwMDAxAESyOgpAemlwMiIINDkw
+OgtAYnV5ZXIwOgpAemlwMSIKMTQwNTU6C0BpdGVuc3sHIgYxbzoJSXRlbQo7
+CCIGMToRQGRlc2NyaXB0aW9uIg5wcm9kdXRvMDE6DEB3ZWlnaHRmGzAuMTAw
+MDAwMDAwMDAwMDAwMDEAmZo6C0BwcmljZWYJMTEuNToOQHF1YW50aXR5aQYi
+BjJvOw8KOwgiBjI7ECIPcHJvZHVjdG8wMjsRZhswLjIwMDAwMDAwMDAwMDAw
+MDAxAJmaOxJmGjIyLjMwMDAwMDAwMDAwMDAwMQDMzTsTaQciCmZsYXNoSUM6
+J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2Vk
+ewA=--1d4c61d7fcc5954afde350534ef7e6db3fb8265c
+  Parameters: {"authenticity_token"=>"b1c27355904a9948c5614f77d004a3b14bb470ad", "action"=>"price_frete", "value"=>"14055+490+true+false", "controller"=>"pagseguro"}
+Completed in 0.21567 (4 reqs/sec) | Rendering: 0.00032 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro/price_frete]
+
+
+Processing PagseguroController#index (for 127.0.0.1 at 2008-11-01 16:28:16) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudGYaMTAuMDYxNTIwMzk5ODk5OTk5ADb1OgpAemlwMiIINDkw
+OgtAYnV5ZXIwOgpAemlwMSIKMTQwNTU6C0BpdGVuc3sHIgYxbzoJSXRlbQo7
+CCIGMToRQGRlc2NyaXB0aW9uIg5wcm9kdXRvMDE6DEB3ZWlnaHRmGzAuMTAw
+MDAwMDAwMDAwMDAwMDEAmZo6C0BwcmljZWYJMTEuNToOQHF1YW50aXR5aQYi
+BjJvOw8KOwgiBjI7ECIPcHJvZHVjdG8wMjsRZhswLjIwMDAwMDAwMDAwMDAw
+MDAxAJmaOxJmGjIyLjMwMDAwMDAwMDAwMDAwMQDMzTsTaQciCmZsYXNoSUM6
+J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2Vk
+ewA=--367b7b984a993f3c63abc23e6edda557c9439e7c
+  Parameters: {"action"=>"index", "controller"=>"pagseguro"}
+Rendering pagseguro/index
+Completed in 0.00463 (215 reqs/sec) | Rendering: 0.00288 (62%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro]
+
+
+Processing PagseguroController#index (for 127.0.0.1 at 2008-11-01 16:28:25) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudGYaMTAuMDYxNTIwMzk5ODk5OTk5ADb1OgpAemlwMiIINDkw
+OgtAYnV5ZXIwOgpAemlwMSIKMTQwNTU6C0BpdGVuc3sHIgYxbzoJSXRlbQo7
+CCIGMToRQGRlc2NyaXB0aW9uIg5wcm9kdXRvMDE6DEB3ZWlnaHRmGzAuMTAw
+MDAwMDAwMDAwMDAwMDEAmZo6C0BwcmljZWYJMTEuNToOQHF1YW50aXR5aQYi
+BjJvOw8KOwgiBjI7ECIPcHJvZHVjdG8wMjsRZhswLjIwMDAwMDAwMDAwMDAw
+MDAxAJmaOxJmGjIyLjMwMDAwMDAwMDAwMDAwMQDMzTsTaQciCmZsYXNoSUM6
+J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2Vk
+ewA=--367b7b984a993f3c63abc23e6edda557c9439e7c
+  Parameters: {"action"=>"index", "controller"=>"pagseguro"}
+Rendering pagseguro/index
+Completed in 0.00445 (224 reqs/sec) | Rendering: 0.00276 (61%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro]
+
+
+Processing PagseguroController#price_frete (for 127.0.0.1 at 2008-11-01 16:28:28) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudGYaMTAuMDYxNTIwMzk5ODk5OTk5ADb1OgpAemlwMiIINDkw
+OgtAYnV5ZXIwOgpAemlwMSIKMTQwNTU6C0BpdGVuc3sHIgYxbzoJSXRlbQo7
+CCIGMToRQGRlc2NyaXB0aW9uIg5wcm9kdXRvMDE6DEB3ZWlnaHRmGzAuMTAw
+MDAwMDAwMDAwMDAwMDEAmZo6C0BwcmljZWYJMTEuNToOQHF1YW50aXR5aQYi
+BjJvOw8KOwgiBjI7ECIPcHJvZHVjdG8wMjsRZhswLjIwMDAwMDAwMDAwMDAw
+MDAxAJmaOxJmGjIyLjMwMDAwMDAwMDAwMDAwMQDMzTsTaQciCmZsYXNoSUM6
+J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2Vk
+ewA=--367b7b984a993f3c63abc23e6edda557c9439e7c
+  Parameters: {"authenticity_token"=>"b1c27355904a9948c5614f77d004a3b14bb470ad", "action"=>"price_frete", "value"=>"14055+490+true+false", "controller"=>"pagseguro"}
+Completed in 0.21480 (4 reqs/sec) | Rendering: 0.00032 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro/price_frete]
+
+
+Processing PagseguroController#index (for 127.0.0.1 at 2008-11-01 16:28:34) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudGYaMTAuMDYxNjE1MjA0MDAwMDAxADuVOgpAemlwMiIINDkw
+OgtAYnV5ZXIwOgpAemlwMSIKMTQwNTU6C0BpdGVuc3sHIgYxbzoJSXRlbQo7
+CCIGMToRQGRlc2NyaXB0aW9uIg5wcm9kdXRvMDE6DEB3ZWlnaHRmGzAuMTAw
+MDAwMDAwMDAwMDAwMDEAmZo6C0BwcmljZWYJMTEuNToOQHF1YW50aXR5aQYi
+BjJvOw8KOwgiBjI7ECIPcHJvZHVjdG8wMjsRZhswLjIwMDAwMDAwMDAwMDAw
+MDAxAJmaOxJmGjIyLjMwMDAwMDAwMDAwMDAwMQDMzTsTaQciCmZsYXNoSUM6
+J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2Vk
+ewA=--4be19a1247cb4fbb1c420ed7cb2d6248f6108e7a
+  Parameters: {"action"=>"index", "controller"=>"pagseguro"}
+Rendering pagseguro/index
+Completed in 0.00445 (224 reqs/sec) | Rendering: 0.00278 (62%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro]
+
+
+Processing PagseguroController#index (for 127.0.0.1 at 2008-11-01 16:28:43) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudGYaMTAuMDYxNjE1MjA0MDAwMDAxADuVOgpAemlwMiIINDkw
+OgtAYnV5ZXIwOgpAemlwMSIKMTQwNTU6C0BpdGVuc3sHIgYxbzoJSXRlbQo7
+CCIGMToRQGRlc2NyaXB0aW9uIg5wcm9kdXRvMDE6DEB3ZWlnaHRmGzAuMTAw
+MDAwMDAwMDAwMDAwMDEAmZo6C0BwcmljZWYJMTEuNToOQHF1YW50aXR5aQYi
+BjJvOw8KOwgiBjI7ECIPcHJvZHVjdG8wMjsRZhswLjIwMDAwMDAwMDAwMDAw
+MDAxAJmaOxJmGjIyLjMwMDAwMDAwMDAwMDAwMQDMzTsTaQciCmZsYXNoSUM6
+J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2Vk
+ewA=--4be19a1247cb4fbb1c420ed7cb2d6248f6108e7a
+  Parameters: {"action"=>"index", "controller"=>"pagseguro"}
+Rendering pagseguro/index
+Completed in 0.01031 (96 reqs/sec) | Rendering: 0.00860 (83%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro]
+
+
+Processing PagseguroController#price_frete (for 127.0.0.1 at 2008-11-01 16:28:56) [POST]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudGYaMTAuMDYxNjE1MjA0MDAwMDAxADuVOgpAemlwMiIINDkw
+OgtAYnV5ZXIwOgpAemlwMSIKMTQwNTU6C0BpdGVuc3sHIgYxbzoJSXRlbQo7
+CCIGMToRQGRlc2NyaXB0aW9uIg5wcm9kdXRvMDE6DEB3ZWlnaHRmGzAuMTAw
+MDAwMDAwMDAwMDAwMDEAmZo6C0BwcmljZWYJMTEuNToOQHF1YW50aXR5aQYi
+BjJvOw8KOwgiBjI7ECIPcHJvZHVjdG8wMjsRZhswLjIwMDAwMDAwMDAwMDAw
+MDAxAJmaOxJmGjIyLjMwMDAwMDAwMDAwMDAwMQDMzTsTaQciCmZsYXNoSUM6
+J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2Vk
+ewA=--4be19a1247cb4fbb1c420ed7cb2d6248f6108e7a
+  Parameters: {"authenticity_token"=>"b1c27355904a9948c5614f77d004a3b14bb470ad", "action"=>"price_frete", "value"=>"04515+030+true+false", "controller"=>"pagseguro"}
+Completed in 0.21000 (4 reqs/sec) | Rendering: 0.00022 (0%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro/price_frete]
+
+
+Processing PagseguroController#index (for 127.0.0.1 at 2008-11-01 16:29:01) [GET]
+  Session ID: BAh7CDoMY3NyZl9pZCIlODgxODU4ZDdkNDQ1MzU1MGJhNWI2MDg1NmFmYTBh
+MWI6CXNhbGVvOglTYWxlDDoKQGNvZGUwOhNAc2hpcG1lbnRfdHlwZSIHU0Q6
+DkBzaGlwbWVudGYaOC45NjE2MTYxNTIwNDAwMDEzAKJkOgpAemlwMiIIMDMw
+OgtAYnV5ZXIwOgpAemlwMSIKMDQ1MTU6C0BpdGVuc3sHIgYxbzoJSXRlbQo7
+CCIGMToRQGRlc2NyaXB0aW9uIg5wcm9kdXRvMDE6DEB3ZWlnaHRmGzAuMTAw
+MDAwMDAwMDAwMDAwMDEAmZo6C0BwcmljZWYJMTEuNToOQHF1YW50aXR5aQYi
+BjJvOw8KOwgiBjI7ECIPcHJvZHVjdG8wMjsRZhswLjIwMDAwMDAwMDAwMDAw
+MDAxAJmaOxJmGjIyLjMwMDAwMDAwMDAwMDAwMQDMzTsTaQciCmZsYXNoSUM6
+J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhhc2h7AAY6CkB1c2Vk
+ewA=--f913d4538928b755ceb409763bfed4811af3bc03
+  Parameters: {"action"=>"index", "controller"=>"pagseguro"}
+Rendering pagseguro/index
+Completed in 0.00480 (208 reqs/sec) | Rendering: 0.00286 (59%) | DB: 0.00000 (0%) | 200 OK [http://localhost/pagseguro]

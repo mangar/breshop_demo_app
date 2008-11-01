@@ -43,14 +43,15 @@ class PagseguroController < ApplicationController
     sale.zip1 = par[0]
     sale.zip2 = par[1]
     sale.shipment_type = (par[2] == "true" ? "SD" : "EN")    
-    
-    pagseguro = Integration.new
-    preco = pagseguro.shipment_price sale
+
+    correios = Correios.new
+    preco = correios.freight sale.zip1+"-"+sale.zip2, sale.weight.to_s, sale.price.to_s
+    preco = preco.to_f
     
     sale.shipment = preco
     session[:sale] = sale
     
-    render :text =>  "{\"pedido\": { \"frete\": \"#{preco}\", \"valor_total\": \"#{sale.price}\"}}"
+    render :text =>  "{\"pedido\": { \"frete\": \"#{preco.to_f}\", \"valor_total\": \"#{sale.price.to_f}\"}}"
     return
   end
   
