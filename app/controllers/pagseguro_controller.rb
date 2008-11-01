@@ -59,6 +59,25 @@ class PagseguroController < ApplicationController
   # Finaliza o sale, após o cadastro do cliente
   def finalizar
     
+    sale = session[:sale]
+    sale.buyer = Buyer.new
+    sale.buyer.name = request.parameters['name'] + " " + request.parameters['last_name']
+    sale.code = "TC01"
+    sale.buyer.zip = request.parameters['zip1']+request.parameters['zip2']
+    sale.buyer.address = request.parameters['address']
+    sale.buyer.number = request.parameters['address_number']
+    sale.buyer.complement = request.parameters['address_complement']
+    sale.buyer.district = request.parameters['district']
+    sale.buyer.city = request.parameters['city']
+    sale.buyer.state = request.parameters['federal_unit']
+    sale.buyer.email = request.parameters['email']
+    sale.buyer.ext = request.parameters['phone1'][1..2]
+    sale.buyer.phone = request.parameters['phone1'][4..12]
+    sale.buyer.phone =     sale.buyer.phone.gsub('-', '')
+    sale.shipment_type = sale.shipment_type
+        
+    pagseguro = Integration.new
+    @content = pagseguro.checkout(sale)
     
   end
   

@@ -72,6 +72,9 @@
 
 </center>
 
+
+<%= form_tag({:action=>'finalizar'}) %>
+
 <% field_set_tag 'Dados cadastrais' do %>
 <center>
 <table width="80%" border="1">
@@ -164,10 +167,9 @@
 		<% if (!session[:redirect_pagseguro_url].nil? && !session[:redirect_pagseguro_url].blank?) %>
 		<%= session[:redirect_pagseguro_url] %>
 		<% end%>
-		| Continuar com Frete tipo PAC | Continuar com Frete tipo SEDEX | Continuar com Frete Fixo | Calcular frete no PagSeguro | 
 		<%= submit_tag 'Continuar --&gt;' %>
     </div></td>
   </tr>
 </table>
 </center>
-
+</form>
